@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
+import { ModeToggle } from './ui/mode-toggle';
 
 const Nav = () => {
   const { data: session } = useSession();
@@ -31,11 +32,14 @@ const Nav = () => {
           height={30}
           className='object-contain'
           />
-          <p className='logo_text'>Promptopia</p>
+          <p className='logo_text'>Arifa</p>
       </Link>
 
       {/* Desktop Navigation */}
       <div className='sm:flex hidden'>
+        <div className="mr-2">
+          <ModeToggle/>
+        </div>
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href="/create-prompt" className='black_btn'>
