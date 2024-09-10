@@ -20,7 +20,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-        <body className={cn('min-h-screen bg-slate-950 font-sans', fontSans.variable)}>
+        <body className={cn('bg-black font-sans', fontSans.variable)}>
           <Provider>     
             <div className='main'>
                 <div className='gradient'/>

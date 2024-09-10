@@ -37,9 +37,9 @@ const Nav = () => {
 
       {/* Desktop Navigation */}
       <div className='sm:flex hidden'>
-        <div className="mr-2">
+        {/* <div className="mr-2">
           <ModeToggle/>
-        </div>
+        </div> */}
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href="/create-prompt" className='black_btn'>
