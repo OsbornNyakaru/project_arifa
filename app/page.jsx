@@ -1,4 +1,4 @@
-import { Feed } from "@/components/Feed";
+import Feed from "@/components/Feed";
 
 const Home = () => {
   return (
@@ -9,9 +9,9 @@ const Home = () => {
             <span className="text-primary-orange text-center"> AI-Powered Prompts </span>
         </h1>
         <p className="desc text-center">
-            Promptopia is an open-source AI prompting tool in the modern world used to discover, create, and share creative prompts.      
+            Arifa is an open-source AI prompt-sharing tool in the modern world used to discover, create, and share creative prompts. <br /> 
+            It's basically your personal assistant prompt engineer.  
         </p>
-
         <Feed />
     </section>  
     )
