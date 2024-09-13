@@ -21,7 +21,7 @@ const Form = ({
         className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
       >
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
+          <span className="font-satoshi font-semibold text-base text-gray-900">
             Your AI Prompt
           </span>
           <textarea 
@@ -33,14 +33,14 @@ const Form = ({
           />
         </label>
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
+          <span className="font-satoshi font-semibold text-base text-gray-900">
             Tag {` `}
             <span className="font-normal">(#product, #webdevelopment, #machinelearning)</span>
           </span>
           <input 
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
-            placeholder="#tag"
+            placeholder="tag"
             required
             className="form_input"
           />
