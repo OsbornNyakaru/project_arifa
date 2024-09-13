@@ -1,14 +1,13 @@
 "use client";
 
 import { Suspense, useEffect, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 import Form from "@/components/Form";
 import { Loader } from '@/components/ui/loader';
 
 const EditPromptContent = () => {
     const router = useRouter();
-    const searchParams = useSearchParams();
     const promptId = searchParams.get('id')
 
     const [submitting, setSubmitting] = useState(false);
