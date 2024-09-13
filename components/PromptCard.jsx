@@ -68,7 +68,7 @@ const PromptCard = ({
       {session?.user.id === post.creator._id && pathname === '/profile' && (
         <div className='mt-5 flex-center gap-4 border-t border-gray-100 pt-3'>
           <Button
-            className='bg-black hover:bg-black/80'
+            className='bg-black hover:bg-black/80 text-white'
             variant="outline"
             size="sm"
           >
@@ -80,7 +80,7 @@ const PromptCard = ({
             </p>
           </Button>
           <Button
-            className='bg-black hover:bg-black/80'
+            className='bg-black hover:bg-black/80 text-white'
             variant="outline"
             size="sm"
           >
