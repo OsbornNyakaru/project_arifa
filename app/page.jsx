@@ -10,7 +10,7 @@ const Home = () => {
         </h1>
         <p className="desc text-center">
             <span className="text-primary-orange text-center font-bold">
-                Arifa
+                Arifa 
             </span> 
                 is an open-source 
             <span className="text-primary-orange text-center font-bold">
