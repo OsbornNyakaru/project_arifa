@@ -5,7 +5,7 @@ const Profile = ({
   desc, 
   data, 
   handleEdit, 
-  handleDelete 
+  handleDelete
 }) => {
   return (
     <section className="w-full">
@@ -13,7 +13,7 @@ const Profile = ({
         <span className="orange_gradient">{name} Profile</span>
       </h1>
       <p className="desc text-left">
-      {desc}
+        {desc}
       </p>
       <div className='mt-10 prompt_layout'>
         {data.map((post) => (

@@ -13,6 +13,7 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 import Form from "@/components/Form";
+import toast from 'react-hot-toast';
 
   {/* Import Statements
     Purpose: These import statements bring in various functionalities and components that the CreatePrompt 
@@ -70,9 +71,11 @@ const CreatePrompt = () => {
 
         if (response.ok) { 
           router.push('/');
+          toast.success("Prompt created successfully");
         }
+        router.refresh();
       } catch (error) {
-          console.log("An error occurred while creating a prompt", error);
+          toast.error("An error occurred while creating a prompt", error);
       } finally {
         setSubmitting(false);
       }

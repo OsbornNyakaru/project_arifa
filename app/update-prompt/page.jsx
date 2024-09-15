@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 import Form from "@/components/Form";
 import { Loader } from '@/components/ui/loader';
+import toast from 'react-hot-toast';
 
 const EditPromptContent = () => {
     const router = useRouter();
@@ -49,10 +50,13 @@ const EditPromptContent = () => {
 
         if (response.ok) { 
           router.push('/');
+          toast.success("Prompt updated successfully")
         }
+        router.refresh();
       } catch (error) {
-          console.log("An error occurred while updating the prompt", error);
+          toast.error("An error occurred while updating the prompt", error);
       } finally {
+
         setSubmitting(false);
       }
     }

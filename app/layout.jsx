@@ -5,6 +5,7 @@ import Provider from '@/components/Provider';
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
+import { ToasterProvider } from '@/providers/toast-provider';
 
 const fontSans = Plus_Jakarta_Sans({ 
   subsets: ["latin"],
@@ -31,6 +32,7 @@ const RootLayout = ({ children }) => {
               enableSystem
               disableTransitionOnChange
             >
+              <ToasterProvider />
               <main className='app'>
                   <Nav />              
                   {children}
