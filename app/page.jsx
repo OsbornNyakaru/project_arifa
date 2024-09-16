@@ -13,7 +13,7 @@ const Home = () => {
                 Arifa </span> 
                  is an open-source <span className="text-primary-orange text-center font-bold">
                   prompt-sharing tool
-            </span> in the modern world used to discover, create, and share creative prompts for generative <AI></AI>. <br /> 
+            </span> in the modern world used to discover, create, and share creative prompts for generative AI. <br /> 
             <span className="text-primary-orange text-center text-sm font-bold">
                 Useful prompts for generative AI like chatGPT and Gemini. 
             </span>  
