@@ -50,7 +50,7 @@ const EditPromptContent = () => {
 
         if (response.ok) { 
           router.push('/');
-          toast.success("Prompt updated successfully")
+          toast.success("Prompt edited successfully")
         }
         router.refresh();
       } catch (error) {
