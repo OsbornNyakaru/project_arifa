@@ -6,7 +6,7 @@ const Home = () => {
         <h1 className="head_text text-center">
             Discover & Share    
             <br className="max-md:hidden" />
-            <span className="text-primary-orange text-center">Prompts for Generative AI </span>
+            <span className="text-primary-orange text-center"> Prompts for Generative AI </span>
         </h1>
         <p className="desc text-center">
             <span className="text-primary-orange text-center font-bold">
