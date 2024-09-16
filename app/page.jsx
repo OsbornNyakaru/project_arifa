@@ -10,15 +10,12 @@ const Home = () => {
         </h1>
         <p className="desc text-center">
             <span className="text-primary-orange text-center font-bold">
-                Arifa 
-            </span> 
-                is an open-source 
-            <span className="text-primary-orange text-center font-bold">
-                AI prompt-sharing tool
-            </span> 
-                in the modern world used to discover, create, and share creative prompts. <br /> 
-            <span className="text-primary-orange text-center font-bold">
-                It's basically your personal assistant prompt engineer.
+                Arifa </span> 
+                 is an open-source <span className="text-primary-orange text-center font-bold">
+                 AI prompt-sharing tool
+            </span> in the modern world used to discover, create, and share creative prompts. <br /> 
+            <span className="text-primary-orange text-center text-sm font-bold">
+                Useful prompts for generative AI like chatGPT and Gemini.
             </span>  
         </p>
         <Feed />

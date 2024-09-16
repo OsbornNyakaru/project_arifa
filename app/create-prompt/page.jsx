@@ -71,6 +71,7 @@ const CreatePrompt = () => {
 
         if (response.ok) { 
           router.push('/');
+          router.refresh();
           toast.success("Prompt created successfully");
         }
         router.refresh();
