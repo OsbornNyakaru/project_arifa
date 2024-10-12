@@ -8,16 +8,6 @@ const Home = () => {
             <br className="max-md:hidden" />
             <span className="text-primary-orange text-center"> Prompts for Generative AI </span>
         </h1>
-        <p className="desc text-center">
-            <span className="text-primary-orange text-center font-bold">
-                Arifa </span> 
-                 is an open-source <span className="text-primary-orange text-center font-bold">
-                  prompt-sharing tool
-            </span> in the modern world used to discover, create, and share creative prompts for generative AI. <br /> 
-            <span className="text-primary-orange text-center text-sm font-bold">
-                Useful prompts for generative AI like chatGPT and Gemini. 
-            </span>  
-        </p>
         <Feed />
     </section>  
     );
